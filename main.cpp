@@ -2,6 +2,8 @@
 #include <iomanip>
 using namespace std;
 
+const int W11 = 11;
+
 class Color 
 {
     private:
@@ -10,15 +12,30 @@ class Color
         int blue;
 
     public:
+        // Constructors
         Color () { red = 0; green = 0; blue = 0; }
+        Color (int r) { red = r; green = 0; blue = 0; }
         Color (int r, int g, int b) { red = r; green = g; blue = b; }
+        // Getters and Setters
         int getRed() const { return red; }
-        void setRed(int red) { this->red = red; }
         int getGreen() const { return green; }
-        void setGreen(int green) { this->green = green; }
         int getBlue() const { return blue; }
-        void setBlue(int blue) { this->blue = blue; }
-};
+        void print() const {
+            cout << setw(W11) << "Red: " << red << endl; 
+            cout << setw(W11) << "Green: " << green << endl;
+            cout << setw(W11) << "Blue: " << blue << endl << endl;
+        }
+    };
+
+int main()
+{
+    
+
+
+
+
+    return 0;
+}
 
 
 
