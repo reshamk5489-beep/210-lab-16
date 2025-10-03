@@ -29,10 +29,40 @@ class Color
 
 int main()
 {
-    
+    cout << fixed << setprecision(2);
 
+    //Default constructor
+    Color color1;
+    color1.print();
 
+    //Parial constructor
+    Color color2(128);
+    color2.print();
 
+    //Full constructor
+    // Red
+    Color color3(255, 0, 0);
+    color3.print();
+
+    // Green
+    Color color4(0, 255, 0);
+    color4.print();
+
+    // Blue
+    Color color5(0, 0, 255);
+    color5.print();
+
+    // White
+    Color color6(255, 255, 255);
+    color6.print();
+
+    // Black
+    Color color7(0, 0, 0);
+    color7.print();
+
+    // Yellow
+    Color color8(255, 255, 0);
+    color8.print();
 
     return 0;
 }
